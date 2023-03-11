@@ -9,7 +9,6 @@ import enLocale from '@fullcalendar/core/locales/en-gb';
 
 const defaultOptions = {
   plugins: [dayGridPlugin, timeGridPlugin, listPlugin, interactionPlugin],
-  contentHeight: 'auto',
   initialView: 'dayGridMonth',
   locale: enLocale,
   selectable: true,
