@@ -1,18 +1,15 @@
 .sidebar {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
+  justify-content: space-between;
 }
 
 .sidebar > :first-child {
-  flex-grow: 1;
-  flex-basis: 20ch;
+  width: 20%;
 }
 
-.sidebar > :last-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-inline-size: 50%;
+.sidebar > :nth-child(2) {
+ width: 80%;
 }
 
 

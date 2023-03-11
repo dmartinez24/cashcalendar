@@ -20,10 +20,6 @@ const defaultOptions = {
     center: 'title',
     right: 'dayGridMonth, timeGridWeek, listWeek',
   },
-  dateClick: (info) => {
-    console.log('%c DATE CLICK INFO', 'color: lightgreen');
-    console.log(info);
-  },
   select: (info) => {
     console.log('%c SELECT INFO', 'color: lightpink');
     console.log(info);
@@ -39,8 +35,12 @@ const defaultOptions = {
   ],
 };
 
-export function setUpFullCalendar(element, options = defaultOptions) {
-  const calendar = new Calendar(element, options);
+export function setUpFullCalendar(element, options = {}) {
+  const opts = {
+    ...defaultOptions,
+    ...options
+  }
+  const calendar = new Calendar(element, opts);
 
   calendar.render();
 
