@@ -1,9 +1,9 @@
-<div class="sidebar-container container">
+<div class="sidebar-container container mr-2">
   <div class="sidebar">
     <nav class="menu left">
-      <button>Calendar</button>
-      <button>Cash</button>
-      <%= linkTo(clientListPath(), {class:"btn btn-primary rounded", body: "Clients"}) %>
+      <button class="btn btn-sidebar rounded mb-2">Calendar</button>
+      <button class="btn btn-sidebar rounded mb-2">Cash</button>
+      <%= linkTo(clientListPath(), {class:"btn btn-sidebar rounded mb-2", body: "Clients"}) %>
     </nav>
     <%= partial("/content_for.plush.html") %>
   </div>
