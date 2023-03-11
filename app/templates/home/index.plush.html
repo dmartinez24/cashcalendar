@@ -1,3 +1,10 @@
-<div class="container">
-  <div class="calendar" id="calendar"></div>
+<div class="sidebar-container container">
+  <div class="sidebar">
+    <nav class="menu left">
+      <button>Calendar</button>
+      <button>Cash</button>
+      <button>Clients</button>
+    </nav>
+    <%= partial("/calendar.plush.html") %>
+  </div>
 </div>
