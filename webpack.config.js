@@ -43,8 +43,8 @@ const configurator = {
           from: "./app/assets",
           globOptions: {
             ignore: [
-              "**/css/**", 
-              "**/js/**", 
+              "**/css/**",
+              "**/js/**",
               "**/src/**",
             ]
           }
@@ -88,7 +88,7 @@ const configurator = {
       mode: env,
       entry: configurator.entries(),
       output: {
-        filename: "[name].[contenthash].js", 
+        filename: "[name].[contenthash].js",
         path: `${__dirname}/public/assets`,
         clean: true,
       },

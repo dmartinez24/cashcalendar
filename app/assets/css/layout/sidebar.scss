@@ -1,0 +1,31 @@
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar > :first-child {
+  flex-grow: 1;
+  flex-basis: 20ch;
+}
+
+.sidebar > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+}
+
+
+
+
+
+/*
+.sidebar > :last-child {
+  flex-grow: 1;
+  flex-basis: 20ch;
+}
+
+.sidebar > :first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+}*/

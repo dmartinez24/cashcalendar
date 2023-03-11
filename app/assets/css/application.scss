@@ -1,23 +1,10 @@
-@import "~bootstrap/scss/bootstrap.scss";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "variables.scss";
+@import "reset.scss";
+@import "layout/layout";
+@import "pages/pages";
 
-// This is just some CSS for the welcome home landing page, feel free to 
-// remove it.
-.welcome {
-    width: 700px;
-    margin: 0 auto;
-    
-    img { 
-        width: 300px;
-    }
 
-    h1 {
-        font-size: 2rem;
-    }
-
-   .navbar {
-        height: 60px;
-        background-color: #3E54AC !important; 
-        box-shadow: 0 2px 4px 0 rgba(140,146,160,0.2)
-   }
+html {
+  font-size: 1rem;
 }
