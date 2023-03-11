@@ -14,5 +14,6 @@ var (
 )
 
 func Index(c buffalo.Context) error {
+	c.Set("page", "calendar")
 	return c.Render(http.StatusOK, r.HTML("home/index.plush.html"))
 }

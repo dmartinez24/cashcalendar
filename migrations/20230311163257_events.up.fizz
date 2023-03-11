@@ -1,0 +1,9 @@
+create_table("events") {
+    t.Column("id", "uuid", {primary: true})
+    t.Column("name", "string", {})
+    t.Column("start", "timestamp", {})
+    t.Column("end", "timestamp", {})
+    t.Column("status", "integer", {"default": 0})
+    t.Column("user_id", "uuid", {})
+    t.Column("client_id", "uuid", {})
+}

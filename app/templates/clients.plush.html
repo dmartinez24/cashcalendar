@@ -1,0 +1,34 @@
+<div class="container ml-3">
+    <div class="row mb-3">
+        <div class="col">
+            <h1>Clients</h1>
+        </div>
+        <div class="col d-flex justify-content-end">
+        <%= linkTo(clientListPath(), {class:"btn btn-sidebar rounded", body: "Add New Client"}) %>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <%= if (len(clients) > 0) { %>
+            <table class="table table-striped">
+                <thead>
+                    <th>Name</th>
+                    <th>Fee per hour</th>
+                </thead>
+                <tbody>
+                    <%= for (client) in clients { %>
+                        <tr>
+                            <td>
+                                <%= client.Name %>
+                            </td>
+                            <td>
+                                <%= client.Fee %>
+                            </td
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        <% } else { %>
+            THERE ARE NO CLIENTS YET, PLEASE CREATE ONE.
+        <% } %>
+    </div>
+</div>
