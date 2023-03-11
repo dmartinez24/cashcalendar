@@ -1,0 +1,35 @@
+
+.stack-l {
+  display: block;
+}
+
+.stack-l > * + * {
+  margin-block-start: var(--s1);
+}
+
+.stack-l\:flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+.stack-l\:flex > * + * {
+  margin-block-start: var(--s1, 1.5rem);
+}
+
+.stack-l\:flex:only-child {
+  /* ↓ `height` in horizontal-tb writing mode */
+  block-size: 100%;
+}
+
+.stack-l\:flex > :nth-child(2)  {
+  margin-block-end: auto;
+}
+
+.stack-l\:recursive * + * {
+  margin-block-start: var(--s1);
+}
+
+.stack-small > * + *{
+  margin-block-end: 0.5rem;
+}

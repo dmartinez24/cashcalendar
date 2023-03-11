@@ -9,7 +9,6 @@ import enLocale from '@fullcalendar/core/locales/en-gb';
 
 const defaultOptions = {
   plugins: [dayGridPlugin, timeGridPlugin, listPlugin, interactionPlugin],
-  contentHeight: 'auto',
   initialView: 'dayGridMonth',
   locale: enLocale,
   selectable: true,
@@ -20,10 +19,6 @@ const defaultOptions = {
     left: 'prev, next, today',
     center: 'title',
     right: 'dayGridMonth, timeGridWeek, listWeek',
-  },
-  dateClick: (info) => {
-    console.log('%c DATE CLICK INFO', 'color: lightgreen');
-    console.log(info);
   },
   select: (info) => {
     console.log('%c SELECT INFO', 'color: lightpink');
@@ -40,8 +35,12 @@ const defaultOptions = {
   ],
 };
 
-export function setUpFullCalendar(element, options = defaultOptions) {
-  const calendar = new Calendar(element, options);
+export function setUpFullCalendar(element, options = {}) {
+  const opts = {
+    ...defaultOptions,
+    ...options
+  }
+  const calendar = new Calendar(element, opts);
 
   calendar.render();
 
