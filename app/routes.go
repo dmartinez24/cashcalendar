@@ -3,9 +3,9 @@ package app
 import (
 	"net/http"
 
-	"cashcalendar/public"
 	"cashcalendar/app/actions/home"
 	"cashcalendar/app/middleware"
+	"cashcalendar/public"
 
 	"github.com/gobuffalo/buffalo"
 )

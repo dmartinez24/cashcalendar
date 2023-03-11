@@ -1,8 +1,8 @@
 package actions_test
 
 import (
-	"testing"
 	"cashcalendar/app"
+	"testing"
 
 	"github.com/gobuffalo/suite/v4"
 )
