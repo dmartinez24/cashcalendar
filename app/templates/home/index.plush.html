@@ -3,8 +3,8 @@
     <nav class="menu left">
       <button>Calendar</button>
       <button>Cash</button>
-      <button>Clients</button>
+      <%= linkTo(clientListPath(), {class:"btn btn-primary rounded", body: "Clients"}) %>
     </nav>
-    <%= partial("/calendar.plush.html") %>
+    <%= partial("/content_for.plush.html") %>
   </div>
 </div>

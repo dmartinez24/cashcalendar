@@ -13,6 +13,8 @@ require (
 	github.com/wawandco/ox v0.12.2
 )
 
+require github.com/gobuffalo/packd v1.0.2 // indirect
+
 require (
 	github.com/BurntSushi/toml v1.2.1 // indirect
 	github.com/Masterminds/semver/v3 v3.1.1 // indirect
@@ -36,9 +38,10 @@ require (
 	github.com/gobuffalo/middleware v1.0.0 // indirect
 	github.com/gobuffalo/nulls v0.4.2 // indirect
 	github.com/gobuffalo/plush/v4 v4.1.18 // indirect
+	github.com/gobuffalo/pop/v5 v5.3.4
 	github.com/gobuffalo/refresh v1.13.3 // indirect
 	github.com/gobuffalo/tags/v3 v3.1.4 // indirect
-	github.com/gobuffalo/validate/v3 v3.3.3 // indirect
+	github.com/gobuffalo/validate/v3 v3.3.3
 	github.com/gorilla/css v1.0.0 // indirect
 	github.com/gorilla/handlers v1.5.1 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
