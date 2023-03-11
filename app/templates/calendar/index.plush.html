@@ -1,0 +1,9 @@
+<div class="calendar-container right">
+  <div class="calendar__header">
+    <h1>Calendar</h1>
+    <button data-micromodal-trigger="add-event" id="add-event-btn">Add Event</button>
+  </div>
+  <div class="calendar" id="calendar"></div>
+</div>
+
+<%= partial("/components/modal.plush.html", {modalId: "add-event"}) %>
